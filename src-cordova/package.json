@@ -1,0 +1,37 @@
+{
+  "name": "org.cordova.quasar.app",
+  "displayName": "Mass Approval",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-meida-sayang": "file:../../../Plugman/MeidaSayang",
+    "cordova-plugin-appminimize": "^1.0.1",
+    "cordova-plugin-deeplinks": "^1.1.1",
+    "cordova-plugin-splashscreen": "^5.0.3"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-meida-sayang": {},
+      "cordova-plugin-appminimize": {},
+      "cordova-plugin-deeplinks": {},
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

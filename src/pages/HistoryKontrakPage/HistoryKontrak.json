@@ -1,0 +1,78 @@
+{
+    "master":{
+      "KdMPeminjam":{
+        "label":"Kode Peminjam",
+        "value":"Pmj0001",
+        "type":"text"
+      },
+      "NmMPeminjam":{
+        "label":"Nama Peminjam",
+        "value":"Hiya",
+        "type":"text"
+      },
+      "Alamat":{
+        "label":"Alamat",
+        "value":"Hiya",
+        "type":"text"
+      },
+      "AlamatTinggal":{
+        "label":"Alamat Tinggal Sekarang",
+        "value":"Hiya",
+        "type":"text"
+      }
+	},
+    "detail":[{
+      "BuktiTKontrak":{
+        "label":"No Kontrak",
+        "value":"M\/ADD\/19\/12\/00001",
+        "type":"text"
+      },
+	  "TglTKontrak":{
+        "label":"Tgl Kontrak",
+        "value":"2019-03-14",
+        "type":"date"
+      },
+	  "NilaiPinjaman":{
+        "label":"Nilai Awal Pinjaman",
+        "value":1000000,
+        "type":"number"
+      },
+	  "DoD":[{
+        "TglTrans":{
+			"label":"Tanggal",
+			"value":"2019-03-14",
+			"type":"date"
+		},
+		"Keterangan":{
+			"label":"Keterangan",
+			"value":"Bayar Cicilan",
+			"type":"number"
+		},
+		"BungaP": {
+			"label":"Bunga (%)",
+			"value":5.00,
+			"type":"number"
+		},
+		"Nilai": {
+			"label":"Nilai",
+			"value":500000,
+			"type":"number"
+		},
+		"SisaPinjaman": {
+			"label":"Pinjaman",
+			"value":500000,
+			"type":"number"
+		},
+		"BungaV": {
+			"label":"Bunga (Rp)",
+			"value":25000,
+			"type":"number"
+		},
+		"Simpanan": {
+			"label":"Simpanan",
+			"value":100000,
+			"type":"number"
+		}
+	  }]
+    }]
+  }
