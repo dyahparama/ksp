@@ -46,7 +46,7 @@ export default {
         }
       }).then(values => {
         if (values.info == "success") {
-          //_this.loadData();
+          _this.loadData();
           _this.showNotif("Success", "green");
           _this.$router.go(-1);
         } else if (values.info == "failed") {

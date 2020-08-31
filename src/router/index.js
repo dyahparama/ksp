@@ -14,7 +14,7 @@ Vue.use(VueRouter);
 
 export default async function({ store }) {
   let baseURL = store.state.GlobalData.baseURL;
-  let ws = store.state.WebService;
+  let ws = await store.state.WebService;
   let response = await store.dispatch("WebService/post", {
     url: `${baseURL}api/getModulData/`,
     data: {
@@ -24,7 +24,7 @@ export default async function({ store }) {
       sortType: "ASC",
       withDetail: 1,
       filter: {
-        userID: ws.id
+        AppID: store.state.GlobalData.appID
       }
     }
   });

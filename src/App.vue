@@ -64,6 +64,13 @@ export default {
         }
       }
     },
+    showNotif(param = "Gagal Saat Request", color = "red") {
+      this.$q.notify({
+        message: param,
+        color: color,
+        position: "top"
+      });
+    },
     handler() {
       const _this = this;
       if (this.token) {
@@ -118,6 +125,8 @@ export default {
             sayang.deleteUser();
           }
           self.$router.replace("/login");
+        } else if (self.userID == data.to && data.type == "notifModul") {
+          self.showNotif(data.message, "green");
         }
       });
     }

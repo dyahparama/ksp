@@ -63,7 +63,7 @@
             {{ getStatusString(dataConsume[0].status) }}
           </span>
         </div>
-        <div
+        <!-- <div
           v-if="dataConsume[0].status == 0"
           class="col-4"
           style="text-align:center"
@@ -80,7 +80,7 @@
             }"
             no-caps
           />
-        </div>
+        </div> -->
         <div
           v-if="
             dataConsume[0].status != -1 &&

@@ -53,7 +53,7 @@ export default {
           sortType: "ASC",
           withDetail: 1,
           filter: {
-            userID: this.id
+            UserID: this.userID
           }
         }
       }).then(values => {
